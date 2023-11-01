@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Study Support and Feedback System Using Natural Language Processing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#home" class="w3-bar-item w3-button w3-black"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#scope" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Scope</a>
+  <a href="#milestones" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Milestones</a>
+  <a href="#docs" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Documents</a>
+  <a href="#present" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Presentations</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Our Team</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact Us</a>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#scope" class="w3-bar-item w3-button">Scope</a>
+    <a href="#milestones" class="w3-bar-item w3-button">Milestones</a>
+    <a href="#docs" class="w3-bar-item w3-button">Documents</a>
+    <a href="#present" class="w3-bar-item w3-button">Presentations</a>
+    <a href="#team" class="w3-bar-item w3-button">Our Team</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity" id="home">
+  <img src="Images\Study-Management.jpg" alt="hometruck" style="width:100%;min-height:350px;max-height:600px;">
+</div>
+
+<!-- Research Project Scope Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="scope">
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<div class="w3-container">
+<h1>Research Project Scope</h1>
+<justify>
+<p>Study Support and Feedback System Using Natural Language Processing (NLP) aims to provide an abstraction layer for a system that assists in studying and providing feedback to users through the application of NLP techniques. The system employs NLP algorithms and methodologies to analyze and understand user input in natural language, paving way for personalized study support and feedback. The abstraction encompasses receiving natural language input from users, which can include structured and essay questions targeting feedback on study materials. NLP techniques are applied to preprocess, tokenize, and parse the input, extracting relevant keyword information and determining the user's intent. NLP algorithms focus on providing a highly accurate score with constructive feedback which enlighten the students to reflect on their progress with time. The system has a crucial influence to generate tailored responses to user queries or feedback, enabling better learning. Coherent and informative natural language responses are provided in a clear and concise manner which eases the work of teachers and lecturers. Students gain the opportunity to seek on areas which need improvement, and teachers can aid them to have a remedy through the system. This helps to generate an efficient and wholesome study environment with a positive impact for both students and teachers. Users can productively interact with the study support and feedback system through a convenient and user-friendly interface. By abstracting the system into these components, the Study Support and Feedback System Using NLP targets to enhance the studying experience, provide personalized support, and deliver effective feedback to users through the application of NLP techniques.  </p>
+</justify>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  
+  <div class="w3-container">
+  <h3>Literature Survey</h3>
+  <justify>
+  <p>Natural Language Processing (NLP) has advanced massively in recent years, enabling the creation of intelligent computers that can comprehend and analyze input in natural language. As a result, support and feedback systems have been developed to aid students in their learning process by offering individualized help, feedback, and direction [7]. Multiple Choice Questions (MCQs) have been the primary focus of conventional assistance and feedback systems, while Structured Essay Questions (SEQs) have become increasingly well-liked due to their capacity to evaluate higher-order thinking abilities. NLP algorithms can comprehend and grade these answers, giving both students and teachers valuable feedback. Key phrase extraction and ontology mapping are utilized to identify the most relevant words or ideas in a text and cater individualized feedback [8]. The development of a support and feedback system for SEQs that makes use of key phrase extraction, NLP, and ML algorithms, as well as ontology mapping, has the potential to entirely alter the manner instructors evaluate and give feedback on students' learning. NLP algorithms, key phrase extraction, and ontology mapping have the potential to revolutionize the field of education by upgrading the process of SEQ evaluation and feedback. This system is capable of analyzing and assessing student responses to SEQs with accuracy, and provide individualized and substantive feedback. It can help to overcome the drawbacks of conventional support and feedback systems, which often rely on MCQs [9]. Additionally, it can be used to monitor student development over time and spot areas where they might require more assistance or resources. This approach has the potential to uplift educational standards overall and improve student learning results drastically.</p>
+  </justify>
+  </div>
+  </div>
+</div>
+
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  
+  <div class="w3-container">
+  <h3>Research Problem</h3>
+  
+  <ul class="w3-ul w3-brown">
+  <li>•	What factors may demotivate students?</li>
+  <li>•	Is the inability to receive correct answers a major concern for students?</li>
+  <li>•	Any issues with receiving proper analysis on their mistakes?</li>
+  <li>•	What are the potential consequences of these, such as lower grades and poor results?</li>
+  <li>•	What are the hardships when assessing student answers manually?</li>
+</ul>
+
+  </div>
+  </div>
+
+    <div class="w3-card w3-white">
+      <div class="w3-container">
+      <h3>Research Objectives</h3>
+	  <ul class="w3-ul w3-gray">
+  <li>•	To analyze answers through careful consideration of keywords and relevancy levels.</li>
+  <li>•	To assign marks to student answers based on different criteria.</li>
+  <li>•	To prompt students on how and why their answers are wrong and how to improve them.</li>
+  <li>•	To view student statistics and measure their growth over time.</li>
+  <li>•	To provide guidance on how to improve student answers.</li>
+</ul>
+
+      </div>
+      </div>
+
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+        <h3>Technology used</h3>
+<ul class="w3-ul w3-brown">
+  <li>•	Integrated Development Environments (IDEs) - Visual Studio Code, Pycharm</li>
+  <li>•	Database Management Systems (DBMS) – MySQL, SQLAlchemy</li>
+  <li>•	Programming language - Python</li>
+  <li>•	Machine Learning Frameworks - PyTorch, Keras, and TensorFlow</li>
+  <li>•	NLP libraries - NLTK and spaCy</li>
+  <li>• Version Control Systems – Git</li>
+</ul>
+        </div>
+        </div>
+
+		</div>
+
+    
+<div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <div class="w3-container">
+    <h3>Methodolgy</h3>
+	<justify>
+    <p>The initial phase entails gathering a sizable and varied dataset of graded open-ended questions from prior online tests. In order to train machine learning algorithms, this dataset will be utilized. To ensure uniformity in the grading standards and to remove any redundant or extraneous information, the obtained dataset will then be preprocessed. The preprocessed dataset would then be used to extract the pertinent features. These features, which can be utilized to train machine learning algorithms, may comprise linguistic, semantic, and syntactic elements. Selection of the most appropriate machine learning algorithm for grading open-ended questions in online exams will include evaluating and comparing several different methods. Using the retrieved features from the preprocessed dataset, the chosen machine learning method would be trained.
+	By contrasting the developed machine learning model's grading accuracy with that of human graders, its performance would be assessed. To make sure that the model can generalize to new queries, evaluation would be conducted on a separate distinct test dataset. The resulting machine learning model would next be implemented into an online examination system to automatically grade open-ended questions. The proposed online examination question correcting system would be put to the test in a real-world online examination environment to assure its usefulness. 
+    </p>
+	</justify>
+	
+	<ul class="w3-ul w3-brown">
+  <li>•	Data gathering</li>
+  <li>•	Data preprocessing</li>
+  <li>•	Selecting the most appropriate machine learning algorithm</li>
+  <li>•	Model training and optimization</li>
+  <li>•	Model validation</li>
+  <li>•	System development and integration</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+  <div class="w3-quarter">
+    
+    </div>
+
+</div>
+
+<!-- Research Project Milestones Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="milestones">
+    <h2>Research Project Milestones</h2>
+    <br>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-d2">
+          <p class="w3-xmedium">Project Proposal</p>
+        </li>
+        <li class="w3-padding-16">The document containing the proposed idea for the research and the presentation of the ideas proposed.</li>
+        
+        <li class="w3-theme-l5 w3-padding-24">
+          <a href="">
+            <button class="w3-button w3-black w3-padding-large">Refer</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l1">                                  
+          <p class="w3-xmedium">Progress Presentation 1</p>
+        </li>
+        <li class="w3-padding-16">Presentation to present the progress of the research project. The project should be 50% complete.</li>
+        
+        <li class="w3-theme-l5 w3-padding-24">
+          <a href="">
+            <button class="w3-button w3-black w3-padding-large">Refer</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l3">
+          <p class="w3-xmedium">Progress Presentation 2</p>
+        </li>
+        <li class="w3-padding-16">Presentation to present the progress of the research project. The project should be 90% complete.</li>
+        
+        <li class="w3-theme-l5 w3-padding-24">
+          <a href="">
+            <button class="w3-button w3-black w3-padding-large">Refer</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xmedium">Demo</p>
+        </li>
+        <li class="w3-padding-16">Poster containing a better view of the research. An easy approch to explain the audience about the research.</li>
+        
+        <li class="w3-theme-l5 w3-padding-24">
+          <a href="">
+            <button class="w3-button w3-black w3-padding-large">Refer</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-d1">
+          <p class="w3-xmedium">Final Assesment</p>
+        </li>
+        <li class="w3-padding-16">In the final assesment final report containing all details in depth of all the components of the research project.</li>
+        
+        <li class="w3-theme-l5 w3-padding-24">
+          <a href="">
+            <button class="w3-button w3-black w3-padding-large">Refer</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-d2">
+          <p class="w3-xmedium">Presentation & Viva</p>
+        </li>
+        <li class="w3-padding-16">The presentation of the whole research project. The processes of all the components are explained in detail.</li>
+       
+        <li class="w3-theme-l5 w3-padding-24">
+          <a href="">
+            <button class="w3-button w3-black w3-padding-large">Refer</button></a>
+        </li>
+      </ul>
+    </div>
+    
+    
+</div>
+<!-- Documents-->
+<div class="w3-row-padding w3-center w3-padding-64 w3-theme-l4" id="docs">
+  <h2>Documents</h2>
+  <br>
+
+  <div class="w3-second w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-hover-shadow">
+      <li class="w3-theme-d2"></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Project Charter</button></a></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Proposal Document</button></a></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Research Logbook</button></a></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Status Document</button></a></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Final Document</button></a></li>
+      <li class="w3-theme-d2"></li>
+    </ul>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-padding-64" id="#">
+  
+  <br>
+</div>
+<!-- Presentations -->
+<div class="w3-row-padding w3-center w3-padding-64 w3-theme-l4" id="present">
+  <h2>Presentations</h2>
+  <br>
+  <div class="w3-second w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-hover-shadow">
+      <li class="w3-theme-l1"></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Proposal Presentation</button></a></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Progress Presentation 1</button></a></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Progress Presentation 2</button></a></li>
+      <li class="w3-padding-16"><a href="">
+        <button class="w3-btn w3-block w3-hover-light-green">Final Presentation</button></a></li>
+      <li class="w3-theme-l1"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <h2>OUR TEAM</h2>
+  <p>Meet the team</p>
+  
+  <div class="w3-row" style="align-content: center ;"><br> 
+    <div class="w3-quarter" >
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    <div class="w3-quarter" >
+      <img src="Images/1.jpg" alt="Boss" style="width:25%" class="w3-circle w3-hover-opacity">
+      <h3>Ms. Anjalie Gamage</h3>
+      <p>Supervisor</p>
+      <p>Senior Lecturer - Faculty of Computing</p>
+      <p>anjalie.g@sliit.lk</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="Images/2.jpg" alt="Boss" style="width:25%" class="w3-circle w3-hover-opacity">
+      <h3>Mr. Dhammika H. De Silva</h3>
+      <p>Co-Supervisor</p>
+      <p>Senior Lecturer - Faculty of Computing</p>
+      <p>dhammika.d@sliit.lk</p>
+    </div>
+  </div>
+  
+
+  <div class="w3-row"><br>
+
+  <div class="w3-quarter">
+    <img src="Images/3.jpeg" alt="Boss" style="width:20%" class="w3-circle w3-hover-opacity">
+    <h3>Kumarasinghe S.</h3>
+    <p>Team Leader - Member 1</p>
+    <p>DS</p>
+    <p>it20126124@my.sliit.lk</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Images/4.jpg" alt="Boss" style="width:20%" class="w3-circle w3-hover-opacity">
+    <h3>Gunathilaka U.K.R.S.W</h3>
+    <p>Member 2</p>
+    <p>DS</p>
+    <p>it20188818@my.sliit.lk</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Images/5.jpeg" alt="Boss" style="width:20%" class="w3-circle w3-hover-opacity">
+    <h3>Umayangie M.K.A. </h3>
+    <p>Member 3</p>
+    <p>IT</p>
+    <p>it20131142@my.sliit.lk</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Images/6.jpeg" alt="Boss" style="width:20%" class="w3-circle w3-hover-opacity">
+    <h3>Chandrasiri K.T.H.S. </h3>
+    <p>Member 4</p>
+    <p>DS</p>
+    <p>it20207304@my.sliit.lk</p>
+  </div>
+  
+  </div>
+  </div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+<div class="w3-row">
+  <div class="w3-col m5">
+  <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+    <h3>Address</h3>
+   
+    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  New Kandy Road, Malabe, Sri Lanka</p>
+    <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +94 117544802</p>
+    <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  studymonitor@gmail.com</p>
+  </div>
+  <div class="w3-col m7">
+    <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+    <div class="w3-section">          
+      <label>Name</label>
+      <input class="w3-input" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">      
+      <label>Email</label>
+      <input class="w3-input" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">      
+      <label>Message</label>
+      <input class="w3-input" type="text" name="Message" required>
+    </div>  
+    <input class="w3-check" type="checkbox" checked name="Like">
+    <label>I Like it!</label>
+    <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+    </form>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <center>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  </center>
+  <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
